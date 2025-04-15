@@ -1,0 +1,349 @@
+$color_1: white;
+$blue: var(--theme-primary-color);
+
+header {
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // position: fixed;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 222;
+
+  .sideNavMenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    padding: 20px 20px;
+    display: none;
+    &.active {
+      display: block;
+    }
+
+    a.active {
+      font-weight: 500;
+      color: var(--theme-primary-color) !important;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      .loginButton {
+        border: none;
+        padding: 5px 20px;
+        background-color: var(--theme-tertiary-color);
+        color: white;
+        border-radius: 20px;
+      }
+      .dropdown {
+        display: flex;
+
+        a:hover {
+          color: $blue;
+        }
+
+        .dropdown-menu {
+          display: none;
+          top: calc(100%);
+
+          li {
+            display: flex;
+            position: relative;
+
+            .dropdown-menu {
+              display: none;
+            }
+
+            &:hover > .dropdown-submenu {
+              display: block;
+            }
+          }
+
+          .dropdown-submenu {
+            display: none;
+            top: 0;
+            right: calc(100%);
+            position: absolute;
+          }
+        }
+
+        &:hover {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      a {
+        color: black;
+
+        img {
+          height: 32px;
+        }
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+      }
+      .profilePicture {
+        border-radius: 50%;
+      }
+      select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .addPlaceButton {
+        background-color: $blue;
+        padding: 10px 15px;
+        border-radius: 25px;
+        color: $color_1;
+        box-sizing: border-box;
+        border: 1px solid $blue;
+        transition-duration: 0.5s;
+
+        &:hover {
+          background-color: $color_1;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  display: flex;
+  //   padding: 20px 20px;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    gap: 20px;
+    img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .logoContainer {
+      margin-left: 10px;
+      text-decoration: none;
+      &:hover {
+        filter: none;
+      }
+    }
+    .navIcon {
+      display: none;
+      cursor: pointer;
+      transition: all 0.5s;
+      &.active {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  a.active {
+    font-weight: 500;
+    color: var(--theme-primary-color) !important;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    .loginButton {
+      border: none;
+      padding: 5px 20px;
+      background-color: var(--theme-tertiary-color);
+      color: white;
+      border-radius: 20px;
+    }
+    .dropdown {
+      display: flex;
+
+      a:hover {
+        color: $blue;
+      }
+
+      .dropdown-menu {
+        display: none;
+        top: calc(100%);
+
+        li {
+          display: flex;
+          position: relative;
+
+          .dropdown-menu {
+            display: none;
+          }
+
+          &:hover > .dropdown-submenu {
+            display: block;
+          }
+        }
+
+        .dropdown-submenu {
+          display: none;
+          top: 0;
+          right: calc(100%);
+          position: absolute;
+        }
+      }
+
+      &:hover {
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    a {
+      color: black;
+
+      img {
+        height: 32px;
+      }
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+    }
+    .profilePicture {
+      border-radius: 50%;
+    }
+    select {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .addPlaceButton {
+      background-color: $blue;
+      padding: 10px 15px;
+      border-radius: 25px;
+      color: $color_1;
+      box-sizing: border-box;
+      border: 1px solid $blue;
+      transition-duration: 0.5s;
+
+      &:hover {
+        background-color: $color_1;
+        color: $blue;
+      }
+    }
+  }
+}
+.navMenu {
+  a {
+    img {
+      height: 32px;
+    }
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+  }
+  .profilePicture {
+    border-radius: 50%;
+  }
+  select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .addPlaceButton {
+    background-color: $blue;
+    padding: 5px;
+    border-radius: 15px;
+    padding-right: 10px;
+    color: $color_1;
+    img {
+      height: 22px;
+      padding: 5px;
+    }
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   nav {
+//     .left {
+//       flex-wrap: nowrap;
+//       .navIcon {
+//         display: block;
+//       }
+//       .logoContainer {
+//         display: none;
+//       }
+//       .searchContainer {
+//         input {
+//           width: 100%;
+//         }
+//       }
+//     }
+//     .right {
+//       display: none;
+//     }
+//   }
+//   .navMenu {
+//     display: none;
+//   }
+// }
+// @media screen and (max-width: 960px) {
+//   nav {
+//     .left {
+//       width: 100%;
+//       justify-content: space-between;
+//     }
+//     .right {
+//       display: none;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 1160px) {
+  nav {
+    .right {
+      display: none;
+    }
+    .left {
+      width: 100%;
+      flex-wrap: wrap;
+      .navSearchContainer {
+        flex-grow: 1;
+        max-width: 100%;
+        .searchContainerWrapper {
+          width: fit-content;
+          margin: auto;
+          max-width: 100%;
+          display: flex;
+          .searchContainer {
+            margin-left: 0;
+            width: 100%;
+            display: flex;
+            .citySearch,
+            .foodSearch {
+              flex: 1;
+              width: 50%;
+
+              input {
+                min-width: 0;
+              }
+            }
+          }
+        }
+      }
+      .navIcon {
+        display: block;
+      }
+    }
+  }
+}

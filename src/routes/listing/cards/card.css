@@ -1,0 +1,108 @@
+.cardWrapper {
+  width: calc(50% - 20px);
+}
+.cardWrapper p {
+  margin: 0;
+}
+.cardWrapper .card {
+  display: flex;
+  flex-direction: row;
+  height: 225px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 100%;
+}
+.cardWrapper .card .image {
+  width: 200px;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cardWrapper .card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.8s;
+}
+.cardWrapper .card .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.cardWrapper .card .content .top {
+  display: flex;
+  align-items: top;
+  width: 100%;
+}
+.cardWrapper .card .content .top .keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-grow: 1;
+  padding-left: 10px;
+  color: var(--color-black-softer);
+}
+.cardWrapper .card .content .top .keywords p {
+  padding: 0px 7px;
+  background: #f7f7f7;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.cardWrapper .card .content .top .featured {
+  padding: 5px 10px;
+  background-color: yellow;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.cardWrapper .card .content .middle {
+  padding: 10px;
+  flex-grow: 1;
+}
+.cardWrapper .card .content .middle .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cardWrapper .card .content .middle .locationContainer {
+  display: flex;
+  gap: 5px;
+}
+.cardWrapper .card .content .middle .locationContainer svg {
+  color: var(--color-black-softer-svg);
+}
+.cardWrapper .card .content .middle .locationContainer p {
+  color: var(--color-black-softer);
+}
+.cardWrapper .card .content .bottom {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.cardWrapper .card .content .bottom .ratingContainer {
+  display: flex;
+  gap: 5px;
+  color: var(--color-black-softer);
+}
+.cardWrapper .card .content .bottom .ratingContainer :nth-child(1) {
+  color: var(--theme-primary-color);
+}
+.cardWrapper .card .content .bottom .ratingContainer svg {
+  color: var(--theme-primary-color);
+}
+.cardWrapper .card .content .bottom .priceContainer {
+  color: var(--color-black-softer);
+}
+.cardWrapper .card:hover .image img {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+@media screen and (max-width: 960px) {
+  .cardWrapper {
+    width: calc(100% - 20px);
+  }
+}/*# sourceMappingURL=card.css.map */

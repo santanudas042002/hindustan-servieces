@@ -1,0 +1,32 @@
+.updateStaticSiteData{
+    margin-top: 20px;
+    .heading{
+        text-align: center;
+    }
+    .formContainer{
+        .error{
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        
+        }
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 20px 10px;
+        // max-width: 550px;
+        margin: auto;
+
+        .buttonContainer{
+            display: flex;
+            width: 100%;
+            justify-content: end
+            ;
+        }
+    }
+}

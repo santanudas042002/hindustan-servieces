@@ -1,0 +1,12 @@
+.primary-button {
+  background-color: var(--theme-primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}/*# sourceMappingURL=buttons.css.map */

@@ -1,0 +1,66 @@
+$blue: var(--theme-primary-color);
+$color_1: white;
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 5px;
+    padding-right: 50px;
+    position: relative;
+    border-radius: 28px;
+    border: var(--border-white);
+    border-right: none;
+    background-color: white;
+    .citySearch {
+      border-right: var(--border-white);
+    }
+    div {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      img {
+        height: auto;
+        margin: auto;
+      }
+    }
+    .searchIcon {
+      background-color: var(--theme-primary-color);
+      border: 1px solid var(--theme-primary-color);
+      padding: 15px;
+      border-radius: 50%;
+      position: absolute;
+      aspect-ratio: 1;
+      right: -2px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color_1;
+      border: none;
+    }
+    input {
+      border: none;
+      margin-left: 5px;
+      outline: none;
+      min-width: 0;
+      max-width: 150px;
+      padding: 5px;
+    }
+  }
+
+  // if inside nav
+  header nav {
+    
+    & .searchContainer{
+      padding: 2px 10px;
+    }
+
+    & .searchIcon{
+      padding: 6px !important;
+      right: 0px;
+    }
+  }
+

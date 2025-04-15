@@ -1,0 +1,78 @@
+.fromOurBlogWrapper {
+  padding: var(--main-section-padding);
+  display: flex;
+  flex-direction: column;
+}
+.fromOurBlogWrapper h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fromOurBlogWrapper .fromOurBlogContent {
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard {
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard:hover {
+  box-shadow: var(--full-white-shadow);
+  scale: 1.05;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard .fromOurBlogCardImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard .fromOurBlogCardImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard .content {
+  padding: 20px;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard .content p {
+  margin-bottom: 0px;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard .content .fromOurBlogCardTag {
+  padding: 5px 10px;
+  background-color: var(--color-off-white);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 0px;
+  margin-top: 0;
+}
+.fromOurBlogWrapper .fromOurBlogContent .fromOurBlogCard .content .fromOurBlogCardTittle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.fromOurBlogWrapper a {
+  text-decoration: none;
+  color: var(--color-black);
+  display: flex;
+}
+.fromOurBlogWrapper a .fromOurBlogButton {
+  background-color: var(--theme-primary-color);
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid var(--theme-primary-color);
+  transition-duration: 0.5s;
+  margin: auto;
+}
+.fromOurBlogWrapper a .fromOurBlogButton:hover {
+  background-color: white;
+  color: var(--theme-primary-color);
+}/*# sourceMappingURL=fromOurBlogResult.css.map */

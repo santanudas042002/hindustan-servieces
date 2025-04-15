@@ -1,0 +1,36 @@
+.filterContainer {
+  width: 100%;
+  max-width: 250px;
+}
+.filterContainer.hide {
+  display: none;
+}
+.filterContainer .heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.filterContainer .heading h2 {
+  flex-grow: 1;
+  text-align: center;
+}
+.filterContainer .heading svg {
+  cursor: pointer;
+}
+.filterContainer .FilterActionButtonContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .filterContainer {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    max-width: none;
+    box-shadow: 0px 0px 10px 0px var(--color-black-softer);
+  }
+}/*# sourceMappingURL=filterContainer.css.map */

@@ -1,0 +1,25 @@
+.businessPaymentDetails {
+  .paymentDetails {
+    .header {
+      h1,
+      p {
+        text-align: center;
+        color: #26a4a4;
+      }
+    }
+    .doPayment {
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      background-color: var(--theme-primary-color);
+      padding: 20px;
+      width: fit-content;
+      box-shadow: 0px 0px 10px 0px var(--theme-primary-color);
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

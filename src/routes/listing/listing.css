@@ -1,0 +1,9 @@
+.listingSection {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+.listingSection .resultSection {
+  display: flex;
+}/*# sourceMappingURL=listing.css.map */

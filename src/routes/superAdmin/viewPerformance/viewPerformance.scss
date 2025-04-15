@@ -1,0 +1,24 @@
+.viewSellerPerformance{
+    .performance{
+        .header{
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .noBusiness{
+            text-align: center;
+            padding: 20px 40px;
+            background-color: var(--theme-primary-color);
+            border-radius: 10px;
+            margin: auto;
+            width: fit-content;
+        }
+        .performanceTable{
+            .exportContainer{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

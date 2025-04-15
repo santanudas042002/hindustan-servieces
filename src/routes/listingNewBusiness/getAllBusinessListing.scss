@@ -1,0 +1,89 @@
+.listOfAllBusiness {
+  .listings {
+    .header {
+      h1,
+      p {
+        text-align: center;
+        color: #26a4a4;
+      }
+      .notice {
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(179, 255, 26);
+        p {
+          margin: 0;
+          color: #000;
+        }
+      }
+    }
+    .businessListContainer {
+      padding: 20px 10px;
+      .listingContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .businessItem {
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--bottom-white-shadow);
+        padding: 10px;
+        .top {
+          display: flex;
+          gap: 10px;
+          .logoContainer {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(34, 53, 255);
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+          .businessName {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            p {
+              margin: 0;
+              color: #087474;
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .middle {
+          padding: 10px 0px;
+          padding-bottom: 0px;
+          .businessType {
+            background-color: rgb(255, 45, 241);
+            padding: 5px 10px;
+            font-weight: 100;
+            color: #fff;
+            width: fit-content;
+          }
+          .businessAddress {
+            color: #000;
+            font-weight: 600;
+          }
+        }
+        .bottom{
+            .status{
+                color: #000;
+                font-weight: 600;
+            }
+            .buttonContainer{
+              display: flex;
+              gap: 15px;
+            }
+        }
+      }
+    }
+  }
+}

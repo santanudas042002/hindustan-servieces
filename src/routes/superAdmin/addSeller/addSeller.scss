@@ -1,0 +1,38 @@
+.superAdminAddSeller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .fromWrapper {
+    .error,
+    .success {
+      margin: 10px 0px;
+      margin-bottom: 20px;
+    }
+    .success {
+      border-color: var(--color-success);
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      div {
+        width: 100%;
+        // max-width: fit-content;
+      }
+      .username,
+      .password {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .buttonContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

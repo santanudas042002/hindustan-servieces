@@ -1,0 +1,63 @@
+.registerSectionWrapper{
+    padding: 10px 15px;
+    position: relative;
+
+    .registerSection{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .header{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form{
+            .registerButton{
+                margin-top: 10px;
+            }
+            p{
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .formError{
+                margin: 10px auto;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                background-color: var(--color-danger);
+                color: var(--color-white);
+                .text{
+                    
+                    font-size: 14px;
+                    flex-grow: 1;
+
+                }
+                .icon{
+                    cursor: pointer;
+                    padding: 2.5px;
+                    color: black;
+                    background-color: var(--color-white);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+
+                    &:hover{
+                        scale: 1.1;
+                    }
+
+
+                }
+            }
+        }
+        .footer{
+            border-top: var(--border-white);
+        }
+    }
+   
+}

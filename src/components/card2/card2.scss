@@ -1,0 +1,136 @@
+.card2Wrapper {
+  // width: calc(50% - 20px);
+  padding-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--full-white-shadow);
+  text-decoration: none;
+
+  p {
+    margin: 0;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    // width: 450px;
+    // height: 225px;
+    max-width: 300px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+    .image {
+      height: 200px;
+      aspect-ratio: 3/2;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      // aspect-ratio: ;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s;
+      }
+    }
+    .content {
+      $padding: 10px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .featured {
+        padding: 5px 10px;
+        background-color: yellow;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 10px;
+      }
+
+      .top {
+        display: flex;
+        align-items: top;
+        width: 100%;
+        margin-top: 30px;
+        .keywords {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          flex-grow: 1;
+          padding-left: $padding;
+          color: var(--color-black-softer);
+
+          p {
+            padding: 0px 7px;
+            background: #f7f7f7;
+            border-radius: 6px;
+            border: 1px solid #eaeaea;
+            height: fit-content;
+          }
+        }
+      }
+
+      .middle {
+        padding: $padding;
+        flex-grow: 1;
+        .title {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .locationContainer {
+          display: flex;
+          gap: 5px;
+          svg {
+            color: var(--color-black-softer-svg);
+          }
+
+          p {
+            color: var(--color-black-softer);
+          }
+        }
+      }
+
+      .bottom {
+        padding: $padding;
+        display: flex;
+        justify-content: space-between;
+
+        .ratingContainer {
+          display: flex;
+          gap: 5px;
+          color: var(--color-black-softer);
+
+          :nth-child(1) {
+            color: var(--theme-primary-color);
+          }
+          svg {
+            color: var(--theme-primary-color);
+          }
+        }
+
+        .priceContainer {
+          color: var(--color-black-softer);
+        }
+      }
+    }
+
+    &:hover {
+      .image {
+        img {
+          transform: scale(1.2);
+          transform-origin: center center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cardWrapper {
+    width: calc(100% - 20px);
+  }
+}

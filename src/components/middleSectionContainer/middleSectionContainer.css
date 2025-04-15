@@ -1,0 +1,25 @@
+.middleContainerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+.middleContainerWrapper .middleContainer {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.middleContainerWrapper .error {
+  background-color: var(--color-danger);
+  color: white;
+  padding: 10px;
+}
+.middleContainerWrapper .success {
+  background-color: var(--color-success);
+  color: white;
+  padding: 10px;
+}/*# sourceMappingURL=middleSectionContainer.css.map */

@@ -1,0 +1,13 @@
+.listingSliderContainer{
+    .react-multi-carousel-list{
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}

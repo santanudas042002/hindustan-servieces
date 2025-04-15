@@ -1,0 +1,27 @@
+.resultContainer {
+  flex-grow: 1;
+  padding: 10px 20px;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.resultContainer .resultInfo {
+  display: flex;
+  gap: 30px;
+  padding: 0px 15px;
+}
+.resultContainer .resultInfo svg {
+  cursor: pointer;
+}
+.resultContainer .cardsContainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resultContainer .loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}/*# sourceMappingURL=resultContainer.css.map */

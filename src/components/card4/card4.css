@@ -1,0 +1,21 @@
+.card4Wrapper {
+  width: 150px;
+}
+.card4Wrapper .card4Image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.card4Wrapper .card4Image:hover {
+  scale: 1.02;
+  box-shadow: var(--full-white-shadow);
+}
+.card4Wrapper .card4Image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=card4.css.map */

@@ -1,0 +1,44 @@
+.searchSection {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchSection .bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.searchSection .bgVideo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.searchSection .bgVideo svg {
+  position: absolute;
+  z-index: 99999999;
+  right: 0;
+  bottom: 0;
+  vertical-align: middle;
+  width: 100%;
+  fill: #fff;
+}
+.searchSection .content {
+  margin: auto;
+  width: 100%;
+}
+.searchSection .content h1,
+.searchSection .content p {
+  color: white;
+  text-align: center;
+}
+.searchSection .content .searchContainerWrapper {
+  max-width: 500px;
+  margin: auto;
+}/*# sourceMappingURL=searchSection.css.map */

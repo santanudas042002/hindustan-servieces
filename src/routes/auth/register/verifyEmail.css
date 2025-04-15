@@ -1,0 +1,29 @@
+.verifyEmailWrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.verifyEmailWrapper .verifyEmail {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+.verifyEmailWrapper .verifyEmail .error {
+  margin-top: 10px;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  padding: 10px;
+}
+.verifyEmailWrapper .verifyEmail form .buttonContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}/*# sourceMappingURL=verifyEmail.css.map */

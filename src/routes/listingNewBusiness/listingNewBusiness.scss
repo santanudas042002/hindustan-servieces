@@ -1,0 +1,174 @@
+.listingNewBusiness {
+  //   padding: 10px;
+  .errorMessage {
+    color: red;
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--theme-primary-color);
+    h1 {
+      color: #fff !important;
+    }
+    p {
+      color: #b8ffff;
+    }
+  }
+  .listingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    textarea {
+      padding: 10px;
+    }
+    .profileImageContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .addressContainer {
+      .address {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        .addressSearchContainer {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+      .addressDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0px;
+      }
+    }
+    .businessTiming {
+      .timing {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .dayTiming {
+          .day {
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          .openCloseTime {
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .contactContainer {
+      .contact {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+    .socialMediaContainer {
+      .socialMedia {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+    .otherBusinessDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .categoryContainer {
+        h3 {
+          padding: 10px 0px;
+        }
+        .inputs {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .categorySelector {
+          position: relative;
+          .categoryList {
+            position: absolute;
+            background-color: white;
+            z-index: 5;
+            box-shadow: 0px 0px 12px 0px #888888;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            text-align: center;
+            min-width: 200px;
+            max-height: 400px;
+            overflow: auto;
+            .category {
+              cursor: pointer;
+              padding: 5px 10px;
+              background-color: var(--theme-primary-color);
+              border-bottom: 1px solid #a2ffff;
+
+              &:hover {
+                background-color: #4aeeee;
+              }
+            }
+          }
+        }
+        .subCategorySelector {
+          position: relative;
+          .subCategoryList {
+            position: absolute;
+            background-color: white;
+            z-index: 5;
+            box-shadow: 0px 0px 12px 0px #888888;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            text-align: center;
+            min-width: 200px;
+            max-height: 400px;
+            overflow: auto;
+            .subCategory {
+              cursor: pointer;
+              padding: 5px 10px;
+              background-color: var(--theme-primary-color);
+              border-bottom: 1px solid #a2ffff;
+
+              &:hover {
+                background-color: #4aeeee;
+              }
+            }
+          }
+        }
+      }
+      .TagContainer {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .facilityInput {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+      }
+      .facilityList {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        .facility {
+          border: 1px solid black;
+          padding: 5px 10px;
+          border-radius: 5px;
+          // background-color: #c3ffd3;
+        }
+      }
+    }
+  }
+}

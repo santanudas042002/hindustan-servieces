@@ -1,0 +1,92 @@
+.getSellers {
+  width: 100%;
+
+  .sellerSearchContainer {
+    padding: 20px 5px;
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    gap: 10px;
+    align-items: center;
+    div {
+      flex-grow: 1;
+    }
+  }
+  .resultContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    .listing {
+      box-shadow: var(--full-white-shadow);
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+
+      .top {
+        .name {
+          font-size: 1.2rem;
+          font-weight: 600;
+          text-transform: capitalize;
+        }
+      }
+      .middle {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .impDetails {
+          .username {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px ;
+            p{
+              // color: white;
+            }
+            .referralCodeContainer{
+              display: flex;
+              flex-wrap: wrap ;
+              gap: 5px;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              background-color: yellow;
+
+              p{
+                flex-grow: 1;
+                padding: 0px 5px;
+              }
+              button{
+                flex-shrink: 0;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //     .deleteButton {
+        //       background-color: var(--theme-primary-color);
+        //       color: white;
+        //       padding: 5px 10px;
+        //       border-radius: 5px;
+        //       cursor: pointer;
+        //     }
+        //     .editButton {
+        //       // background-color: var(--theme-danger-color);
+        //       color: white;
+        //       padding: 5px 10px;
+        //       border-radius: 5px;
+        //       cursor: pointer;
+        //     }
+      }
+    }
+  }
+}

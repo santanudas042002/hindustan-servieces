@@ -1,0 +1,55 @@
+.card3Wrapper{
+    width: 200px;
+    max-width: 100%;
+    aspect-ratio: 6/10;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: start;
+    cursor: pointer;
+
+    &:hover{
+        .image{
+            img{
+                transform: scale(1.5);
+            }
+        }
+    }
+    // box-shadow: var(--full-white-shadow);
+
+    .card3{
+        width: 100%;
+        height: 100%;
+    }
+    
+    // overflow: hidden;
+    .image{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+    }
+
+    .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 10px;
+        background-color: var(--black-overlay);
+        color: white;
+
+
+    }
+    
+}

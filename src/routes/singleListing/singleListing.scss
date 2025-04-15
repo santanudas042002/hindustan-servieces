@@ -1,0 +1,145 @@
+$cardWidth: 350px;
+
+.listing {
+  p {
+    margin: 0;
+  }
+  .page {
+    .pageContent {
+      padding: 20px;
+      .tittle {
+        .verified {
+          display: flex;
+          align-items: center;
+          width: fit-content;
+          gap: 5px;
+          color: white;
+          background-color: rgb(207, 1, 176);
+          padding: 5px 10px;
+          border-radius: 5px;
+
+          p {
+            margin: 0;
+          }
+        }
+        .superAdminVerificationButton {
+          padding: 10px 0px;
+        }
+      }
+
+      .ratingPriceContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 12px;
+
+        .price {
+          font-size: 1.5rem;
+          color: var(--color-black-softer);
+        }
+        .rating {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: var(--theme-primary-color);
+
+          p {
+            margin: 0;
+          }
+          svg {
+          }
+        }
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 0;
+      }
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 10px 0;
+
+        .filterItem {
+          padding: 5px 10px;
+          border-radius: 5px;
+          background-color: #eaeaea;
+        }
+      }
+      .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 10px 10px;
+        padding: 20px 0px;
+      }
+      .contacts {
+        padding: 5px 20px;
+        border-radius: 5px;
+        box-shadow: var(--bottom-white-shadow);
+
+        width: 100%;
+        max-width: $cardWidth;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          text-align: center;
+        }
+
+        .contactsContainer {
+          div {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            p:nth-child(2) {
+              word-break: break-all;
+            }
+          }
+        }
+        .social {
+          margin-top: 10px;
+          justify-self: center;
+          flex-grow: 1;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          .socialContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+              height: 48px;
+              width: 48px;
+            }
+          }
+        }
+      }
+      .hours {
+        padding: 5px 20px;
+        border-radius: 5px;
+        box-shadow: var(--bottom-white-shadow);
+
+        width: 100%;
+        max-width: $cardWidth;
+        h3 {
+          text-align: center;
+        }
+
+        .hoursContainer {
+          padding-bottom: 5px;
+          .hourItem {
+            .day {
+              width: 100px;
+              text-transform: capitalize;
+            }
+            display: flex;
+            gap: 5px;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

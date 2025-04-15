@@ -1,0 +1,19 @@
+.filterCards {
+  box-shadow: var(--bottom-white-shadow);
+  padding: 20px 20px;
+}
+.filterCards .capsuleOptions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.filterCards .capsuleOptions .capsuleOption {
+  padding: 5px 10px;
+  border: var(--border-white);
+  border-radius: 30px;
+  cursor: pointer;
+}
+.filterCards .capsuleOptions .capsuleOption:hover {
+  background-color: var(--color-white-opposite);
+  color: white;
+}/*# sourceMappingURL=filterCards.css.map */

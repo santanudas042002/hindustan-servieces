@@ -1,0 +1,25 @@
+.aboutUsPage {
+  .banner {
+    min-height: 400px;
+    height: fit-content !important;
+    padding: 50px 20px !important;
+  }
+  .container {
+    .img-blocks-container {
+      overflow: hidden;
+    }
+    .background-section {
+      overflow: hidden;
+      img {
+        opacity: 1;
+        //add a black overlay
+        filter: brightness(0.5) grayscale(0.5) blur(1px);
+      }
+      .text-wrapper {
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
